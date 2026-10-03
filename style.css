@@ -1025,3 +1025,48 @@ div.video-container iframe {
     height: 100% !important;
     display: block !important;
 }
+
+/* --- ESTILO PARA SEÇÃO DO VÍDEO CENTRALIZADO --- */
+.vsl-full-section {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 40px 20px !important;
+    box-sizing: border-box !important;
+}
+
+.vsl-full-section .video-section-wrapper {
+    width: 100% !important;
+    max-width: 960px !important; /* Tamanho bem grande no PC */
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.vsl-full-section .vsl-header {
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+.vsl-full-section .vsl-header h3 {
+    font-size: 1.5rem !important;
+    color: #ffffff !important;
+}
+
+.vsl-full-section .video-container {
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    border: 1px solid var(--border-dark, #2a2f3d) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8) !important;
+}
+
+.vsl-full-section .video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
