@@ -1000,3 +1000,28 @@ div.video-container iframe {
     height: 100% !important;
     display: block !important;
 }
+
+/* Centralização total da seção do vídeo */
+.video-section-wrapper {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 0 auto !important; /* Centraliza horizontalmente */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Centraliza o conteúdo interno */
+    text-align: center !important;
+}
+
+.video-container {
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    margin: 0 auto !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+}
+
+.video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
