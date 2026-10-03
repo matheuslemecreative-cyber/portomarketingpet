@@ -960,3 +960,43 @@ div.video-container iframe {
         font-size: 1.1rem !important;
     }
 }
+
+/* --- SEÇÃO VSL CENTRALIZADA E GRANDE --- */
+.vsl-section {
+    width: 100% !important;
+    padding: 60px 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.video-section-wrapper {
+    width: 100% !important;
+    max-width: 960px !important; /* Largura grande em telas de computador */
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.vsl-header h3 {
+    font-size: 1.6rem !important;
+    margin-bottom: 24px !important;
+    text-align: center !important;
+    color: #ffffff !important;
+}
+
+.video-container {
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    border: 1px solid var(--border-dark) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8) !important;
+}
+
+.video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
