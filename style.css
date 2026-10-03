@@ -902,3 +902,61 @@ div.video-container iframe {
     border: 0 !important;
     display: block !important;
 }
+
+/* --- CENTRALIZAÇÃO E EXPANSÃO DO VÍDEO PARA COMPUTADOR --- */
+
+/* 1. Wrapper principal do vídeo */
+.video-section-wrapper {
+    width: 100% !important;
+    max-width: 1100px !important; /* Tamanho amplo ideal para computador */
+    margin: 60px auto 0 auto !important; /* 'auto' nas laterais centraliza o bloco */
+    padding: 0 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Centraliza o título e o vídeo */
+    text-align: center !important;
+}
+
+/* 2. Título do vídeo centralizado */
+.vsl-header {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 24px !important;
+}
+
+.vsl-header h3 {
+    font-size: 1.5rem !important;
+    color: var(--text-main) !important;
+    text-align: center !important;
+}
+
+/* 3. Container do Player esticado e centralizado */
+.video-container {
+    width: 100% !important;
+    max-width: 1000px !important; /* Largura grande em telas de PC */
+    aspect-ratio: 16 / 9 !important; /* Mantém a proporção exata sem cortar nada */
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    border: 1px solid var(--border-dark) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8) !important;
+    background: transparent !important;
+}
+
+.video-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    display: block !important;
+}
+
+/* Ajuste proporcional para telas menores / celulares */
+@media (max-width: 768px) {
+    .video-section-wrapper {
+        margin-top: 40px !important;
+    }
+    .vsl-header h3 {
+        font-size: 1.1rem !important;
+    }
+}
